@@ -31,13 +31,11 @@
 * COMMON PROPERTIES
 */
 define( "B2UCTEXTDOMAIN", "'b2uc'" );
-$plugin_folder = 'bijoy-to-unicode-converter';
 
 
 add_action('admin_enqueue_scripts', 'scripts_for_converter');   
 
 function scripts_for_converter() {
-    global $plugin_folder;
 
     wp_register_script('common-scripts', plugins_url('js/common-scripts.js', __FILE__) );
     wp_register_script('converter-scripts', plugins_url('js/converter-scripts.js', __FILE__) );
@@ -81,7 +79,7 @@ function my_meta_init() {
 // Put the converter in action
 
 function my_meta_setup() {
-    global $post, $plugin_folder;
+    global $post;
 
     echo '<div class="my_meta_control">';
         echo '<p>';
