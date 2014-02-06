@@ -29,7 +29,7 @@ add_action( 'admin_enqueue_scripts', 'styles_for_converter' );
 
 function styles_for_converter(){
 
-    wp_register_style( 'admin-style', get_template_directory_uri() . '/admin-panel/admin-style.css', '', '', 'screen' );
+    wp_register_style( 'admin-style', get_template_directory_uri() . '/style.css', '', '', 'screen' );
 
     wp_enqueue_style( 'admin-style' ); // stylesheet for admin panel
 }
