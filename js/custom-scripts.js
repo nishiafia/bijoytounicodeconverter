@@ -1,30 +1,21 @@
 function converttext(){
-	
-        // $('#uploadIFrame').contents().find("body p").addClass("Value from parent file.");
-		
-
 
 		var t="bangla";
 		
 		//  Wordpress Post Title
 		
-		var w=document.getElementById('title').value;
-                var content1=document.getElementById('content').value;
-                w=cM(t,w);
-                content1=cM(t,content1);
-              //  alert(w);
-                   // alert(content1);
-		//document.getElementById('title').value='';
-                document.getElementById('content').value='';
-               document.getElementById('title').value=w;
-          //   document.getElementById('content').value=content1;
-		 ag(document.getElementById('content'),content1);
-               
+		var w = document.getElementById('title').value;
+	        var content1=document.getElementById('content').value;
+	        w = cM(t,w);
+	        content1 = cM(t,content1);
 	
+	        document.getElementById('content').value='';
+	       	document.getElementById('title').value=w;
+		ag(document.getElementById('content'),content1);
 
 	
 
-          //  Wordpress Top Sub
+        //  Wordpress Top Sub
 		//$('#acf-field-top_sub').bind("change",function(){
 		var top_sub=document.getElementById('acf-field-top_sub').value;
 		//alert(content1);
@@ -42,7 +33,7 @@ function converttext(){
 		//ag(document.getElementById('acf-field-bottom_sub'),bottom_sub);
 		//});
 
- //  Wordpress acf-field-reporter
+ 		//  Wordpress acf-field-reporter
 		//$('#acf-field-reporter').bind("change",function(){
 		var reporter=document.getElementById('acf-field-reporter').value;
 		//alert(content1);

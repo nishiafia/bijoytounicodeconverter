@@ -1,0 +1,16 @@
+/**
+* Stylesheet for Admin Panel
+*/
+
+.my_meta_control{
+	position: relative;
+	width: 100%;
+}
+
+.my_meta_control img{
+	float: right;
+}
+
+.clearfix{
+	clear: both;
+}
